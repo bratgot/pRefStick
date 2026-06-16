@@ -114,5 +114,6 @@ masterkeech (MIT).
 
 ## License
 
-© 2026 Marten Blumen. Add your preferred license here (MIT is a common choice for
-NDK plugins) and include a matching `LICENSE` file.
+Released under the MIT License — see [LICENSE](LICENSE).
+
+© 2026 Marten Blumen.
