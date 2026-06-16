@@ -1,0 +1,342 @@
+#! C:/Program Files/Nuke16.1v1/nuke-16.1.1.dll -nx
+version 16.1 v1
+define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="2" y="14" w="1701" h="892" screen="0">
+        <splitter orientation="1">
+            <split size="40"/>
+            <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                <page id="Toolbar.1"/>
+            </dock>
+            <split size="1038" stretch="1"/>
+            <splitter orientation="2">
+                <split size="498"/>
+                <dock id="" activePageId="Viewer.1">
+                    <page id="Viewer.1"/>
+                </dock>
+                <split size="351"/>
+                <dock id="" activePageId="DAG.1" focus="true">
+                    <page id="DAG.1"/>
+                    <page id="Curve Editor.1"/>
+                    <page id="DopeSheet.1"/>
+                </dock>
+            </splitter>
+            <split size="615"/>
+            <dock id="" activePageId="Properties.1">
+                <page id="Properties.1"/>
+                <page id="uk.co.thefoundry.backgroundrenderview.1"/>
+                <page id="Scenegraph.1"/>
+                <page id="uk.co.thefoundry.scripteditor.2"/>
+            </dock>
+        </splitter>
+    </window>
+</layout>
+}
+Root {
+ inputs 0
+ gsv  {
+  __default__ {
+  }
+  __panel__ {
+   tab {Main}
+  }
+ 
+}
+ name C:/dev/pRefStick/tests/TestScript_v02.nk
+ frame 1009
+ first_frame 1001
+ last_frame 1040
+ lock_range true
+ format "2048 1556 0 0 2048 1556 1 2K_Super_35(full-ap)"
+ proxy_type scale
+ proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
+ colorManagement OCIO
+ defaultViewerLUT "OCIO LUTs"
+ workingSpaceLUT scene_linear
+ monitorLut "sRGB (default)"
+ monitorOutLUT "rec709 (default)"
+ int8Lut matte_paint
+ int16Lut texture_paint
+ logLut compositing_log
+ floatLut scene_linear
+}
+Camera3 {
+ inputs 0
+ translate {1231.113647 1229.399292 1774.881348}
+ rotate {-35.2780022 45.00000125 0}
+ name Camera1
+ xpos -56
+ ypos -309
+}
+Camera3 {
+ inputs 0
+ translate {{curve x1001 -5485.074426 -5470.013266 -5455.116706 -5440.377902 -5425.721956 -5411.214504 -5396.795353 -5382.266473 -5367.472788 -5352.246096 -5336.474946 -5320.226972 -5303.66008 -5286.615262 -5269.070799 -5251.792961 -5235.543956 -5220.493824 -5206.14455 -5191.752207 -5177.284498 -5163.532312 -5151.592345 -5142.17721 -5135.091029 -5129.605668 -5124.820127 -5119.716828 -5113.581015 -5106.048138 -5096.981345 -5086.555317 -5075.379101 -5064.70553 -5056.04697 -5050.242838 -5047.154261 -5046.036756 -5045.94971 -5046.202852} {curve x1001 137.491035 138.0812691 138.6515659 139.1777772 139.6547068 140.1095951 140.5653719 141.0272612 141.4939595 141.9534124 142.3918906 142.8191954 143.2682545 143.7458984 144.2251804 144.6843649 145.1219233 145.5581628 145.998735 146.4234811 146.838962 147.3046529 147.8929733 148.6333796 149.5106109 150.4827818 151.4714336 152.3879165 153.1879526 153.8698991 154.430239 154.8531762 155.158254 155.4406943 155.8366712 156.4464901 157.3067566 158.4056481 159.6851646 161.0580545} {curve x1001 2952.268111 2924.015754 2895.829218 2867.675099 2839.53921 2811.506282 2783.63473 2755.888778 2728.226981 2700.631328 2673.050257 2645.472708 2617.914663 2590.215132 2562.352445 2534.690023 2507.503349 2480.759095 2454.211871 2427.627623 2401.021887 2374.602923 2348.610506 2323.168152 2298.220479 2273.573678 2248.903832 2223.850012 2198.192421 2171.972123 2145.460969 2118.927439 2092.521528 2066.414894 2040.791958 2015.677748 1990.955192 1966.492897 1942.171403 1917.903095}}
+ rotate {{curve x1001 1.040300865 1.043236171 1.046949624 1.051098232 1.054958236 1.058949105 1.060441714 1.061991125 1.063982194 1.064892522 1.064638369 1.066668728 1.068443474 1.068276864 1.070033529 1.065917557 1.05763212 1.046793557 1.034473062 1.023686664 1.014145025 1.004493328 0.9934953241 0.9826231971 0.9720201869 0.9614534798 0.9516945078 0.946558561 0.9431110231 0.9426308166 0.9460910467 0.9498055322 0.9546996463 0.9584489148 0.9580876944 0.9567512751 0.9527604211 0.9488913248 0.9442390275 0.939147896} {curve x1001 -71.01007935 -70.95863745 -70.90259368 -70.84887179 -70.79276861 -70.7341152 -70.67568037 -70.61641039 -70.55894122 -70.50134869 -70.45126966 -70.40548265 -70.36918848 -70.34661886 -70.3309176 -70.33222439 -70.35503046 -70.37950332 -70.40095775 -70.41591877 -70.4414114 -70.48980545 -70.55517885 -70.62512615 -70.68030464 -70.72605048 -70.76407127 -70.79819067 -70.82406412 -70.83573629 -70.83201016 -70.83413376 -70.87998739 -70.97793492 -71.13897108 -71.33963369 -71.54494949 -71.74528256 -71.92391526 -72.08702161} {curve x1001 0.07112546204 0.04765817915 0.04237752943 0.03287751517 0.007691942923 -0.02292396093 -0.03977911659 -0.06715816273 -0.09592191107 -0.117699255 -0.1256459219 -0.1611348755 -0.1689394827 -0.1732350371 -0.1599399381 -0.1562125046 -0.1429895782 -0.1821163943 -0.2161506924 -0.2512266124 -0.2473923725 -0.2275231465 -0.2431045811 -0.2906975956 -0.3307363642 -0.3844989279 -0.4252942925 -0.4503072624 -0.5055731831 -0.5574008346 -0.6059719571 -0.6074153841 -0.5538703383 -0.5267467701 -0.4771322531 -0.5149868244 -0.5581285543 -0.6205289337 -0.6912234339 -0.7338435451}}
+ scaling {{curve x1001 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1} {curve x1001 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1} {curve x1001 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1}}
+ uniform_scale {{curve x1001 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1}}
+ skew {{curve x1001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0} {curve x1001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0} {curve x1001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0}}
+ pivot_translate {{curve x1001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0} {curve x1001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0} {curve x1001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0}}
+ focal {{curve x1001 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108 101.3261108}}
+ haperture {{curve x1001 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515 35.40618515}}
+ vaperture {{curve x1001 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089 18.67200089}}
+ near {{curve x1001 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1}}
+ far {{curve x1001 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000 1000000}}
+ win_translate {{curve x1001 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0} {curve x1001 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0}}
+ win_scale {{curve x1001 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1} {curve x1001 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1}}
+ focal_point {{curve x1001 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5}}
+ fstop {{curve x1001 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905 5.599999905}}
+ read_from_file true
+ file C:/Users/marty/Downloads/car_geo_camera/SBD_1300_BG01-shotCam_v001.abc
+ name Camera2
+ xpos -204
+ ypos -15
+}
+set N6bd98f00 [stack 0]
+ReadGeo2 {
+ inputs 0
+ file C:/Users/marty/Downloads/car_geo_camera/SBD_1300_1300_BG01-AnimGeo_v004.abc
+ read_on_each_frame true
+ use_geometry_colors false
+ range_first 0
+ range_last 1040
+ scene_view {
+  {0}
+  imported:
+  0
+  selected:
+  0
+  items:
+  /root/car:Mesh/car:MeshShape
+ }
+ name ReadGeo1
+ xpos 67
+ ypos -251
+}
+Dot {
+ name Dot1
+ xpos 101
+ ypos -169
+}
+set Nbe1ac900 [stack 0]
+FrameHold {
+ firstFrame 1012
+ name FrameHold1
+ xpos -72
+ ypos -48
+}
+push $Nbe1ac900
+pRefStick {
+ inputs 2
+ name pRefStick1
+ xpos 67
+ ypos -42
+}
+push 0
+ScanlineRender {
+ inputs 3
+ conservative_shader_sampling false
+ motion_vectors_type distance
+ name ScanlineRender1
+ xpos 67
+ ypos 118
+}
+set Nbe1cc000 [stack 0]
+Grade {
+ white 0.001
+ name Grade1
+ xpos -361
+ ypos 134
+}
+GeoImport {
+ inputs 0
+ file C:/Users/marty/Downloads/car_geo_camera/SBD_1300_BG01-shotCam_v001.abc
+ range_first 0
+ range_last 1040
+ name GeoImport1
+ xpos 208
+ ypos -711
+}
+ReadGeo2 {
+ inputs 0
+ file C:/Users/marty/Downloads/car_geo_camera/SBD_1300_BG01-shotCam_v001.abc
+ read_on_each_frame true
+ use_geometry_colors false
+ range_first 1001
+ range_last 1040
+ scene_view {
+  {0}
+  imported:
+  selected:
+  items:
+ }
+ name ReadGeo2
+ xpos 276
+ ypos -366
+}
+push $Nbe1cc000
+PRefToMotion {
+ source_frame 1012
+ name PRefToMotion1
+ xpos 55
+ ypos 206
+}
+CheckerBoard2 {
+ inputs 0
+ name CheckerBoard1
+ xpos 328
+ ypos 227
+}
+Transform {
+ translate {-97 -125}
+ scale 0.08399999887
+ center {1024 778}
+ name Transform1
+ xpos 328
+ ypos 299
+}
+STMap {
+ inputs 2
+ uv motion
+ name STMap1
+ xpos 55
+ ypos 302
+}
+push $N6bd98f00
+Light3 {
+ inputs 0
+ translate {-535 660 1160}
+ name Light1
+ xpos 409
+ ypos -139
+}
+push $Nbe1ac900
+Scene {
+ inputs 2
+ name Scene1
+ xpos 276
+ ypos -75
+}
+push 0
+ScanlineRender {
+ inputs 3
+ conservative_shader_sampling false
+ motion_vectors_type distance
+ name ScanlineRender2
+ xpos 460
+ ypos 71
+}
+Merge2 {
+ inputs 2
+ name Merge1
+ xpos 264
+ ypos 389
+}
+GeoNormals {
+ inputs 0
+ name GeoNormals1
+ xpos 824
+ ypos -120
+}
+Camera3 {
+ inputs 0
+ translate {-4666.522461 1644.890747 2541.709229}
+ rotate {-16.27800907 -61.20007274 0}
+ name Camera3
+ xpos 594
+ ypos 267
+}
+Cube {
+ inputs 0
+ rows 50
+ columns 50
+ separate_faces false
+ uniform_scale 1000
+ name Cube1
+ xpos 898
+ ypos -158
+}
+ProcGeo {
+ mode fBm
+ orient All
+ x_size 4200
+ x_offset 8.2
+ y_size 4000
+ Gain 3
+ Speed 0.5
+ name ProcGeo1
+ xpos 898
+ ypos -85
+}
+Normals {
+ action build
+ name Normals1
+ xpos 898
+ ypos 4
+}
+Dot {
+ name Dot2
+ xpos 932
+ ypos 84
+}
+set Nbe1ad680 [stack 0]
+FrameHold {
+ firstFrame 1012
+ name FrameHold2
+ xpos 759
+ ypos 205
+}
+push $Nbe1ad680
+pRefStick {
+ inputs 2
+ use_reference false
+ name pRefStick2
+ xpos 898
+ ypos 211
+}
+push 0
+ScanlineRender {
+ inputs 3
+ conservative_shader_sampling false
+ motion_vectors_type distance
+ name ScanlineRender3
+ xpos 898
+ ypos 335
+}
+PRefToMotion {
+ source_frame 1012
+ name PRefToMotion2
+ xpos 910
+ ypos 427
+}
+CheckerBoard2 {
+ inputs 0
+ name CheckerBoard2
+ xpos 1193
+ ypos 444
+}
+Transform {
+ translate {-97 -125}
+ scale 0.375
+ center {1024 778}
+ name Transform2
+ xpos 1193
+ ypos 516
+}
+STMap {
+ inputs 2
+ uv motion
+ name STMap2
+ xpos 920
+ ypos 510
+}
+Viewer {
+ frame 1009
+ frame_range 1001-1040
+ viewerProcess "sRGB (default)"
+ gl_lighting true
+ monitorOutNDISenderName "NukeX - TestScript_v02 - Viewer1"
+ monitorOutOutputTransform "rec709 (default)"
+ name Viewer1
+ xpos 210
+ ypos 115
+}

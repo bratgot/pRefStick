@@ -1,0 +1,4 @@
+C:/dev/pRefStick/build/CMakeFiles/pRefStick.dir
+C:/dev/pRefStick/build/CMakeFiles/INSTALL.dir
+C:/dev/pRefStick/build/CMakeFiles/ALL_BUILD.dir
+C:/dev/pRefStick/build/CMakeFiles/ZERO_CHECK.dir

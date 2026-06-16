@@ -1,0 +1,56 @@
+# ---- Local tests (repo root) ----
+/tests/
+
+# ---- Build output ----
+build/
+build-*/
+cmake-build-*/
+out/
+install/
+
+# ---- CMake (in-source safety net) ----
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+
+# ---- Compiled plugin / objects ----
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+*.lib
+*.a
+*.exp
+*.pdb
+*.ilk
+
+# ---- Visual Studio (CMake generates these) ----
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.*
+*.user
+Debug/
+Release/
+x64/
+Win32/
+
+# ---- IDEs / editors ----
+.idea/
+.vscode/
+*.swp
+*~
+
+# ---- Nuke / runtime ----
+*.log
+pRefStick_debug.log
+*.nk~
+*.autosave
+
+# ---- OS cruft ----
+.DS_Store
+Thumbs.db
+desktop.ini
