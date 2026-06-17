@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-# On macOS pick the arch to match the Nuke build: Nuke <15 is Intel-only
-# (Rosetta), 15+ is native arm64. REZ_NUKE_VERSION is set by the resolved
-# nuke package (e.g. "16.1.5").
 ARCHFLAG=""
 if [ "$(uname)" = "Darwin" ]; then
     major="${REZ_NUKE_VERSION%%.*}"
