@@ -2,7 +2,6 @@
 
 ## ☕ Support This Work
 
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-☕-FFDD00?style=flat&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/bratgot)
 
 A Nuke NDK plugin that bakes a **frame-invariant position** into vertex colour
 (`Cf`), so geometry with no UVs and no `Pref`/`rest` primvar can still drive a
@@ -13,6 +12,9 @@ an ST/UV map.
 
 `pRefStick` is a classic `GeoOp` (subclass of `ModifyGeo`) and appears in the
 node menu under **Geometry ▸ pRefStick**.
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-☕-FFDD00?style=flat&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/bratgot)
+
 
 ## Why
 
