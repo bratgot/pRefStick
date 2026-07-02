@@ -1,5 +1,9 @@
 # pRefStick
 
+## ☕ Support This Work
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-☕-FFDD00?style=flat&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/bratgot)
+
 A Nuke NDK plugin that bakes a **frame-invariant position** into vertex colour
 (`Cf`), so geometry with no UVs and no `Pref`/`rest` primvar can still drive a
 position-reference reprojection. It is the front half of a "stick a texture to
