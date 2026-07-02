@@ -1,6 +1,6 @@
 # pRefStick
 
-## ☕ Support This Work
+
 
 
 A Nuke NDK plugin that bakes a **frame-invariant position** into vertex colour
@@ -12,9 +12,6 @@ an ST/UV map.
 
 `pRefStick` is a classic `GeoOp` (subclass of `ModifyGeo`) and appears in the
 node menu under **Geometry ▸ pRefStick**.
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-☕-FFDD00?style=flat&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/bratgot)
-
 
 ## Why
 
@@ -33,6 +30,9 @@ to match against. `pRefStick` manufactures that label:
 The result, rendered unlit, is a position pass that `PRefToMotion` can match
 back to a source frame.
 
+
+## ☕ Support This Work
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-☕-FFDD00?style=flat&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/bratgot)
 ## Requirements
 
 - Nuke 16.x (built against **Nuke 16.1**; should build for 14–16 with the matching
